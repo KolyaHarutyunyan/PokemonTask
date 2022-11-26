@@ -1,0 +1,35 @@
+.main {
+    flex-grow: 1;
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+}
+
+.searchbox {
+    margin: 12px auto;
+}
+
+.search-input {
+    border: 1px solid #FF5722;
+    padding: 4px;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 24px;
+}
+
+.cards-box {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.progress, .no-items-text {
+    margin: 100px auto;
+}

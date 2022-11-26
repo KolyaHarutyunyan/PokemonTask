@@ -1,0 +1,23 @@
+.button {
+    border: 2px solid #FF5722;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: inherit;
+    cursor: pointer;
+    font-size: 12px;
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+
+.button:hover {
+    background-color: #FF5722;
+    color: white;
+}
+
+.button:disabled {
+    background-color: inherit;
+    opacity: 0.4;
+    cursor: not-allowed;
+}

@@ -1,0 +1,49 @@
+.paginationWrapper {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightblue;
+    height: 48px;
+    border-radius: 8px;
+    padding: 0 16px;
+    margin-top: 4px;
+}
+
+.paginationWrapper .MuiPaginationItem-textPrimary.Mui-selected {
+    background: blue;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.paginationWrapper .MuiPaginationItem-page {
+    background: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.paginationWrapper .MuiPaginationItem-outlined {
+    background: wheat;
+    border: 1px solid #DDE3F0;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: #545F7E;
+}
+
+.paginationWrapper .MuiPaginationItem-page.Mui-selected:hover {
+    background: #387DFF 0% 0% no-repeat padding-box;
+    color: white;
+}
+
+.showCountText {
+    font-size: 14px;
+    font-weight: 600;
+}

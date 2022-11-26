@@ -1,0 +1,9 @@
+.info {
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.stats em, .images-box {
+    display: flex;
+    justify-content: center;
+}

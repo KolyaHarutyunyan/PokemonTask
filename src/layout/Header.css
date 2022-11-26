@@ -1,0 +1,13 @@
+.header {
+    border-bottom: 2px solid;
+    height: 48px;
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    gap: 36px;
+    padding: 0 24px;
+}
+
+.title {
+    color: #37474F;
+}
