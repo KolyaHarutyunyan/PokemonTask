@@ -2,9 +2,10 @@
   "name": "task-pokemons",
   "private": true,
   "version": "0.0.0",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build && cpy index.js dist && node dist/index.js",
+    "start": "vite",
+    "build": "tsc && vite build && cpy index.js dist",
     "preview": "vite preview"
   },
   "dependencies": {
