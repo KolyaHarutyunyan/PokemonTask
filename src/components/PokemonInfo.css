@@ -1,9 +1,13 @@
 .info {
     text-transform: capitalize;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .stats em, .images-box {
     display: flex;
     justify-content: center;
+    gap: 24px;
 }
