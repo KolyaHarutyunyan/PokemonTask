@@ -80,10 +80,16 @@ const Main = () => {
                     })
                     .finally(() => setLoading(false));
             }, 700);
-            return () => clearTimeout(timerId);
+            return () => {
+                if (timerId) clearTimeout(timerId);
+            };
         } else {
-            const timerId = setTimeout(fetchData, 700);
-            return () => clearTimeout(timerId);
+            if (pokemonData.count === 0) {
+                const timerId = setTimeout(fetchData, 700);
+                return () => {
+                    if (timerId) clearTimeout(timerId);
+                };
+            }
         }
     }, [searchedValue]);
 
