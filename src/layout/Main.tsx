@@ -129,13 +129,15 @@ const Main = () => {
                                         ))}
                                     </div>
                                 </div>
-                                <PaginationHOC
-                                    listLength={pokemonData.results?.length || 0}
-                                    page={page}
-                                    handleChangePage={(number) => changePageHandler(number)}
-                                    count={pokemonData.count}
-                                    limitCountNumber={_limitCount}
-                                />
+                                {pokemonData.count !== 0 && (
+                                    <PaginationHOC
+                                        listLength={pokemonData.results?.length || 0}
+                                        page={page}
+                                        handleChangePage={(number) => changePageHandler(number)}
+                                        count={pokemonData.count}
+                                        limitCountNumber={_limitCount}
+                                    />
+                                )}
                             </>
                         )}
             </main>
